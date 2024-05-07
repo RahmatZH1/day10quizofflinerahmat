@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/textViewCarType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Type: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewDayOfRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day of Rent:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewCarType"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewHargaSewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Sewa: Rp 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewDayOfRent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewBiayaTambahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biaya Tambahan: Rp 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewHargaSewa"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount: Rp 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewBiayaTambahan"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTotalBiayaSewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Biaya Sewa: Rp 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewDiscount"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTypeSewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Sewa: Dalam Kota"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewTotalBiayaSewa"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTypeSewa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Back"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/storesportcar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUIZ RAHMAT STORE SPORT-CAR"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="24dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupCarType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storesportcar"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewCarType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Type:"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbPajeroSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pajero Sport"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbAlphard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alphard"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbInnova"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Innova"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbBrio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brio"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupSewaType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupCarType"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewSewaType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sewa Type:"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSewaDalamKota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dalam Kota"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSewaLuarKota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luar Kota"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewDayOfRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day of Rent:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/radioGroupSewaType"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextDayOfRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDayOfRent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Enter the number of days"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/buttonCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextDayOfRent"
+        android:layout_marginTop="24dp"
+        android:text="Checkout"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
